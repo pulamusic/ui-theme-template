@@ -1,11 +1,12 @@
 {
-  "name": "ui-theme-template",
+  "name": "atom-theme-pulamusic-ui",
   "theme": "ui",
   "version": "0.0.0",
-  "description": "A short description of your UI theme",
+  "description": "pulamusic's personalized Atom theme",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "atom"
   ],
   "repository": "https://github.com/atom-community/ui-theme-template",
   "license": "MIT",

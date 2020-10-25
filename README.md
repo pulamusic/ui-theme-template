@@ -4,30 +4,42 @@
 
 ---
 
-# atom-theme-pulamusic
+# atom-theme-pulamusic-ui
 
 This is my theme to fiddle with. If I get to like it I can submit a UI theme back to the official project.
 
-**10/25/2020 | 09:52 EDT (GMT-04:00) | I started my own theme, titled `atom-theme-pulamusic/`.**
+*10/25/2020 | 09:52 EDT (GMT-04:00) | I started my own theme, titled `atom-theme-pulamusic-ui/`*
 
-Here is some text from the [Atom Flight Manual pages that describe setting up to create a UI theme](https://flight-manual.atom.io/hacking-atom/sections/creating-a-theme/#creating-a-ui-theme).
+#### **VERY IMPORTANT**
 
-#### Creating a UI Theme
+Always work on this project in dev mode: `atom --dev .`
 
-To create a UI theme, do the following:
+Always work on a branch other than `master`.
 
-* Fork the ui-theme-template
-* Clone the forked repository to the local filesystem
-* Open a terminal in the forked theme's directory
-* Open your new theme in a Dev Mode Atom window run atom --dev . in the terminal or use the View > Developer > Open in Dev Mode menu
-* Change the name of the theme in the theme's package.json file
-* Name your theme end with a -ui, for example super-white-ui
-* Run apm link --dev to symlink your repository to ~/.atom/dev/packages
-* Reload Atom using Alt+Cmd+Ctrl+L
-* Enable the theme via the "UI Theme" drop-down in the "Themes" tab of the Settings View
-* Make changes! Since you opened the theme in a Dev Mode window, changes will be instantly reflected in the editor without having to reload.
+* 10/25/2020 | 11:05 EDT (GMT-04:00) currently working on `color-palette` branch
 
-> Tip: Because we used apm link --dev in the above instructions, if you break anything you can always close Atom and launch Atom normally to force Atom to the default theme. This allows you to continue working on your theme even if something goes catastrophically wrong.
+#### to-do[^1]
+
+- [X] rough out a color palette
+- [ ] adjust margins and padding
+- [ ] decide on packages for theme
+- [X] documentation
+- [ ] add testing: [Jasmine](https://jasmine.github.io/index.html)
+
+#### questions
+
+Does a ui theme come with a pre-determined set of packages?
+
+* If not, I can add a list of suggested Atom packages.
+* How many packages are there? Is there some way to search the collections of plugins by category?
+
+Is it cool to add CSS behaviors to the ui, or is that against some sort of coding aesthetic?
+
+Can I add scripts?
+
+---
+
+## the rest of this stuff is from the official documentation
 
 ---
 
@@ -42,7 +54,7 @@ Happy theming! 🚀
 
 ## Getting started
 
-~1. Fork this repository.~
+~~1. Fork this repository.~~
 
 2. Continue with step 2 from [Creating a UI Theme](http://flight-manual.atom.io/hacking-atom/sections/creating-a-theme/#creating-a-ui-theme)
 
@@ -50,12 +62,18 @@ If you get stuck somewhere, feel free to create an [issue](https://github.com/at
 
 ps. Don't forget to delete the above and edit the below in your own `README.md`.
 
-
 ---
-
 
 # My UI theme
 
-A short description of your theme.
+This is where I put the documentation for my new theme.
+
+~~A short description of your theme~~
 
 ![A screenshot of your theme](https://cloud.githubusercontent.com/assets/378023/8842525/4215f26c-3136-11e5-9d94-d2c078a05d24.png)
+
+---
+
+#### footnotes
+
+[^1]: Checked means I started. Strikethrough means done. Undo strikethrough when revisiting an item.
