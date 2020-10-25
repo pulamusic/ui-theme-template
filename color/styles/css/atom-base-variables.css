@@ -1,32 +1,5 @@
+/* Text Colors */
 
-// UI Variables
-// -------------------
-
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
-/*
-
-@text-color: hsl(0,0%,66%);
-
-- is the same as
-
-@text-color: rgb(168, 168, 168);
-*/
-
-/*
-
-NOTE: I copied all these variables to another file so I can view the palette visually.
-
-*/
-
-
-// Text Colors
 @text-color:           hsl(0,0%,66%);
 @text-color-subtle:    hsl(0,0%,50%);
 @text-color-highlight: hsl(0,0%,94%);
@@ -37,7 +10,8 @@ NOTE: I copied all these variables to another file so I can view the palette vis
 @text-color-warning: hsl( 36,  60%, 72%);
 @text-color-error:   hsl(  9, 100%, 64%);
 
-// Background colors
+/* Background colors */
+
 @background-color-info:    hsl(208, 100%, 50%);
 @background-color-success: hsl(160,  70%, 36%);
 @background-color-warning: hsl(32,   60%, 50%);
@@ -47,11 +21,20 @@ NOTE: I copied all these variables to another file so I can view the palette vis
 @background-color-selected:  lighten(@base-background-color, 10%);
 @app-background-color:       darken(@base-background-color, 5%);
 
-// Base colors
+/* Base colors */
+
 @base-background-color: hsl(222,6%,22%);
 @base-border-color:     darken(@base-background-color, 8%);
 
-// Component colors
+/* Site colors */
+@ui-site-color-1: hsl(208, 100%, 50%); // blue
+@ui-site-color-2: hsl(160,  70%, 42%); // green
+@ui-site-color-3: hsl(32,   60%, 50%); // orange
+@ui-site-color-4: #D831B0;             // pink
+@ui-site-color-5: #EBDD5B;             // yellow
+
+/* Component colors */
+/*
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
@@ -83,14 +66,9 @@ NOTE: I copied all these variables to another file so I can view the palette vis
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
+*/
 
-// Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
-@ui-site-color-4: #D831B0;             // pink
-@ui-site-color-5: #EBDD5B;             // yellow
-
+/*
 // Sizes
 @font-size: 12px;
 @input-font-size: 14px;
@@ -107,3 +85,5 @@ NOTE: I copied all these variables to another file so I can view the palette vis
 // Misc
 @component-border-radius: 2px;
 @font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+
+*/
