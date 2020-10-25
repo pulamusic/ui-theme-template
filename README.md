@@ -23,7 +23,7 @@ Always work on a branch other than `master`.
 - [X] rough out a color palette
 - [ ] adjust margins and padding
 - [ ] decide on packages for theme
-- [X] documentation
+- [X] (*important*) documentation
 - [ ] add testing: [Jasmine](https://jasmine.github.io/index.html)
 
 #### questions
@@ -54,7 +54,7 @@ Happy theming! 🚀
 
 ## Getting started
 
-~~1. Fork this repository.~~
+1. ~~Fork this repository.~~
 
 2. Continue with step 2 from [Creating a UI Theme](http://flight-manual.atom.io/hacking-atom/sections/creating-a-theme/#creating-a-ui-theme)
 
@@ -68,7 +68,7 @@ ps. Don't forget to delete the above and edit the below in your own `README.md`.
 
 This is where I put the documentation for my new theme.
 
-~~A short description of your theme~~
+A short description of your theme
 
 ![A screenshot of your theme](https://cloud.githubusercontent.com/assets/378023/8842525/4215f26c-3136-11e5-9d94-d2c078a05d24.png)
 
