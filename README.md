@@ -18,7 +18,7 @@ Always work on a branch other than `master`.
 
 * 10/25/2020 | 11:05 EDT (GMT-04:00) currently working on `color-palette` branch
 
-#### to-do[^footnote]
+#### to-do[^1]
 
 - [X] rough out a color palette
 - [ ] adjust margins and padding
@@ -76,4 +76,4 @@ A short description of your theme
 
 #### footnotes
 
-[^footnote]: Checked means I started. Strikethrough means done. Undo strikethrough when revisiting an item.
+[^1]: Checked means I started. Strikethrough means done. Undo strikethrough when revisiting an item.
