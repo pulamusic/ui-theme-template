@@ -18,7 +18,7 @@ Always work on a branch other than `master`.
 
 * 10/25/2020 | 11:05 EDT (GMT-04:00) currently working on `color-palette` branch
 
-#### to-do [^1]
+#### to-do[^1]
 
 - [X] rough out a color palette
 - [ ] adjust margins and padding
