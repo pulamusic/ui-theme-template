@@ -23,7 +23,7 @@ Always work on a branch other than `master`.
 - [X] rough out a color palette
 - [ ] adjust margins and padding
 - [ ] decide on packages for theme
-- [X] (*important*) documentation
+- [X] (**important**) documentation
 - [ ] add testing: [Jasmine](https://jasmine.github.io/index.html)
 
 #### questions
