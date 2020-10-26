@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="color preview ui, initial-scale=1">
     <meta name="description" content="post-container">
     <meta name="keywords" content="HTML, CSS, JavaScript, UI">
     <meta name="author" content="James Carroll">
@@ -13,34 +13,205 @@
     <link rel="stylesheet" href="styles/css/main.css">
     <link rel="stylesheet/less" type="text/css" href="styles/css/atom-base-variables.css">
   </head>
+
   <body>
 
     <header class="tc pv4 pv5-ns">
       <img src="http://tachyons.io/img/logo.jpg" class="br3 ba b--black-10 h3 w3" alt="avatar">
       <h1 class="f5 f4-ns fw6 black-70">James Carroll</h1>
       <h2 class="f6 black-70 fw2 ttu tracked">Instructional Designer</h2>
+      <p class="f6 black-50 fw1">figuring out a color palette ui</p>
     </header>
 
-    <!-- a place to add some text -->
-    <!-- this section's template can be reused -->
-    <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
-      <h1 class="mt0">Centered Container</h1>
-      <p class="lh-copy measure">
-        Combine width or max-width values with the center class to create a centered
-        container for your content.
-      </p>
-    </section>
+    <!-- a series of tables specifying the atom ui color variables -->
+    <div class="pa4">
+      <div class="overflow-auto">
+        <!-- Text colors: 8 rows -->
+        <table class="f6 w-100 mw8 center" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">variable</th>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">color</th>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">notes</th>
+              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">color codes</th>
+            </tr>
+          </thead>
+
+          <tbody class="lh-copy">
+            <!-- text colors -->
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-1">something</div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(168, 168, 168)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-subtle</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-2">something</div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(128, 128, 128)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-highlight</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-3"><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(240, 240, 240)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-selected</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-4"><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(255, 255, 255)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-info</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-5"><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(100, 148, 237)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-success</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-6"><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(115, 201, 144)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-warning</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-7"><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(226, 192, 141)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@text-color-error</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-8"><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(255, 99, 71)</td>
+            </tr>
+
+            <!-- background colors -->
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@background-color-info</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-9"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(0, 136, 255)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@background-color-success</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-10"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(28, 156, 113)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@background-color-warning</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-11"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(204, 133, 51)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@background-color-error</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-12"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(217, 38, 38)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@background-color-highlight</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-13"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 0.95)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@background-color-selected</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-14"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 0.9)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@app-background-color</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-15"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 1.05)</td>
+            </tr>
+
+            <!-- base colors -->
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@base-background-color</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-16"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(53, 55, 59)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@base-border-color</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-17"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 1.08)</td>
+            </tr>
+
+            <!-- colors -->
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@ui-site-color-1</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-18"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(0, 136, 255)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@ui-site-color-2</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-19"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(32, 182, 132)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@ui-site-color-3</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-20"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(204, 133, 51)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@ui-site-color-4</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-21"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(216, 49, 176)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20">@ui-site-color-5</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-22"></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20">rgb(235, 221, 91)</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+    </div>
 
     <!-- the main viewport for the color palette -->
     <!-- template taken from https://tachyons.io/components/layout/full-bleed-square/index.html -->
     <!-- I have other layouts in the `pages/` directory -->
+
+    <!-- I need 22 cards, divided 8, 7, 2, 5 -->
+
     <main class="cf w-100">
+
       <div class="fl w-50 w-third-m w-25-ns">
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
             class="db bg-center cover aspect-ratio--object" />
         </div>
       </div>
+
+      <!--
+      <div class="fl w-50 w-third-m w-25-ns">
+        <div class="aspect-ratio aspect-ratio--1x1">
+          <a href="#" style="background-image: url(http://mrmrs.github.io/images/0006.jpg);
+                class="db bg-center cover aspect-ratio--object hide-child br2" ">
+            <span class="white dtc v-mid w-50 h-50 child bg-black-40 pa5">
+              hello
+            </span>
+          </a>
+        </div>
+      </div>
+    -->
+
       <div class="fl w-50 w-third-m w-25-ns">
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url(http://mrmrs.github.io/images/0002.jpg);"
@@ -158,7 +329,7 @@
     </main>
 
     <!-- another template from tachyons. I need to create my own personal boilerplates. -->
-    <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+    <footer class="pv5 ph3 ph5-m ph6-l mid-gray">
       <small class="f6 db tc">&copy; 2020 <b class="ttu">pulamusic</b>.</small>
       <div class="tc mt3">
         <!-- I'm not sure what to do with this -->
