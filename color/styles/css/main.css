@@ -28,12 +28,21 @@ body {
 	margin: 0
 }
 
+
 /* ======== color boxes ======== */
 
 .color-box {
-	width: 100px;
-	height: 50px;
-	padding: 0.5em;
+	width: 80px;
+	height: 80px;
+	padding: 1em;
+}
+
+.color-box-dk {
+	background-color: #000000;
+}
+
+.color-box-lt {
+	background-color: #ffffff;
 }
 
 /* ======== text colors ======== */
@@ -41,49 +50,49 @@ body {
 /* @text-color */
 .color-box-1 {
 	color: rgb(168, 168, 168);
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 /* @text-color-subtle */
 .color-box-2 {
 	color: rgb(128, 128, 128);
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 /* @text-color-highlight */
 .color-box-3 {
 	color: rgb(240, 240, 240);
-	background-color: #000000;
+	/*background-color: #000000;*/
 }
 
 /* @text-color-selected */
 .color-box-4 {
 	color: rgb(255, 255, 255);
-	background-color: #000000;
+	/*background-color: #000000;*/
 }
 
 /* @text-color-info */
 .color-box-5 {
 	color: rgb(100, 148, 237);
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 /* @text-color-success */
 .color-box-6 {
 	color: rgb(115, 201, 144);
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 /* @text-color-warning */
 .color-box-7 {
 	color: rgb(226, 192, 141);
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 /* @text-color-error */
 .color-box-8 {
 	color: rgb(255, 99, 71);
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 /* ======== background colors ======== */
@@ -175,7 +184,32 @@ body {
 	background-color: rgb(235, 221, 91);
 }
 
+/* ===================================== */
+
+/* ======== shadows ======== */
+/*
+.shadow-inner {
+	box-shadow: inset 5px 5px 10px #000000;
+}
+*/
+.shadow-outer {
+	box-shadow: 6px 6px 8px 1px rgba(124, 123, 123, 0.3);
+}
+
+/*
+#avatar {
+	box-shadow: 6px 6px 8px 1px rgba(124, 123, 123, 0.3);
+	box-shadow: inset 0 0 10px #000000;
+}
+*/
+
+/* ===================================== */
+
 /* ======== back to regular CSS ======== */
+
+header, footer {
+	background-color: rgb(242, 239, 234);
+}
 
 h1 {
 	font-size: 2em;
@@ -186,6 +220,9 @@ hr {
 	box-sizing: content-box;
 	height: 0;
 	overflow: visible
+	text-align: center;
+	width: 40%;
+	font-weight: 100;
 }
 
 pre {
