@@ -16,170 +16,250 @@
 
   <body>
 
-    <header class="tc pv4 pv5-ns">
-      <img src="http://tachyons.io/img/logo.jpg" class="br3 ba b--black-10 h3 w3" alt="avatar">
+    <!-- pt4 pb2 pt5-ns pb3-ns -->
+
+    <!-- navbar time! -->
+    <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+      <nav class="f6 fw6 ttu tracked">
+        <a class="link dim white dib mr3" href="#" title="Home"><img src="assets/home_large_icon.png" alt="home icon" class="mw1"></a>
+        <a class="link dim white dib mr3" href="#" title="About">about</a>
+        <a class="link dim white dib mr3" href="#" title="Store">pages</a>
+        <a class="link dim white dib" href="#" title="Contact">color palette</a>
+      </nav>
+    </header>
+
+    <header class="tc pb3 pt6">
+      <img src="assets/img/heliocentric.jpg" class="br3 ba b--black-10 h3 w3 shadow-inner shadow-outer" alt="avatar">
       <h1 class="f5 f4-ns fw6 black-70">James Carroll</h1>
       <h2 class="f6 black-70 fw2 ttu tracked">Instructional Designer</h2>
-      <p class="f6 black-50 fw1">figuring out a color palette ui</p>
+      <p class="f5 black-50 fw1 pb3">figuring out a color palette ui</p>
     </header>
 
     <!-- a series of tables specifying the atom ui color variables -->
     <div class="pa4">
       <div class="overflow-auto">
-        <!-- Text colors: 8 rows -->
+
+        <!-- Text colors: 8 rows, 5 columns -->
         <table class="f6 w-100 mw8 center" cellspacing="0">
+
           <thead>
+            <h4 class="tc fw1 f3 b--black-20 pv1 bg-white">text-color</h4>
             <tr>
-              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">variable</th>
-              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">color</th>
-              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">notes</th>
-              <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">color codes</th>
+              <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">variable</th>
+              <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">black bg</th>
+              <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">white bg</th>
+              <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">notes</th>
+              <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">color codes</th>
             </tr>
           </thead>
 
           <tbody class="lh-copy">
             <!-- text colors -->
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-1">something</div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(168, 168, 168)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-1 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div class="color-box color-box-lt color-box-1 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>primary text color</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(168, 168, 168)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-subtle</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-2">something</div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(128, 128, 128)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-subtle</td>
+              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-dk color-box-2 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-2 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div><p>when is this used?</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(128, 128, 128)</td>
             </tr>
-            <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-highlight</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-3"><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(240, 240, 240)</td>
-            </tr>
-            <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-selected</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-4"><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(255, 255, 255)</td>
-            </tr>
-            <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-info</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-5"><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(100, 148, 237)</td>
-            </tr>
-            <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-success</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-6"><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(115, 201, 144)</td>
-            </tr>
-            <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-warning</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-7"><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(226, 192, 141)</td>
-            </tr>
-            <tr>
-              <td class="pv3 pr3 bb b--black-20">@text-color-error</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-8"><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(255, 99, 71)</td>
+            <tr class="">
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-highlight</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-3 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-3 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div>highlight text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(240, 240, 240)</td>
             </tr>
 
-            <!-- background colors -->
+            <!-- thicker border bottom on previous row -->
+
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@background-color-info</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-9"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(0, 136, 255)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-selected</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-4 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-4 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div>text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(255, 255, 255)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@background-color-success</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-10"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(28, 156, 113)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-info</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-5 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-5 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div>text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(100, 148, 237)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@background-color-warning</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-11"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(204, 133, 51)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-success</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-6 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-6 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div>text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(115, 201, 144)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@background-color-error</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-12"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgb(217, 38, 38)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-warning</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-7 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-7 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div>text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(226, 192, 141)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@background-color-highlight</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-13"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 0.95)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@text-color-error</td>
+              <td class="pv3 pr3 bb b--black-20 tc"><div class="color-box color-box-dk color-box-8 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-lt color-box-8 ma p4 center">text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div>text color</div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(255, 99, 71)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- background colors: 7 rows, 5 columns -->
+        <table class="f6 w-100 mw8 center" cellspacing="0">
+          <tbody>
+
+            <thead>
+              <h4 class="tc fw1 f3 b--black-20 pv1 bg-white">bg-color</h4>
+              <tr>
+                <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">variable</th>
+                <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">bg color</th>
+                <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">notes</th>
+                <th class="fw3 bb bt b--black-20 tc pv3 pr3 bg-white">color codes</th>
+              </tr>
+            </thead>
+
+
+            <tr>
+              <td class="pv3 pr3 bb b--black-20 br i">@background-color-info</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-9 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc br"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(0, 136, 255)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@background-color-selected</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-14"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 0.9)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@background-color-success</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-10 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(28, 156, 113)</td>
             </tr>
             <tr>
-              <td class="pv3 pr3 bb b--black-20">@app-background-color</td>
-              <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-15"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
-              <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 1.05)</td>
+              <td class="pv3 pr3 bb b--black-20 br i">@background-color-warning</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-11 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(204, 133, 51)</td>
             </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20 br i">@background-color-error</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-12 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgb(217, 38, 38)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20 br i">@background-color-highlight</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-13 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgba(53, 55, 59, 0.95)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20 br i">@background-color-selected</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-14 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgba(53, 55, 59, 0.9)</td>
+            </tr>
+            <tr>
+              <td class="pv3 pr3 bb b--black-20 br i">@app-background-color</td>
+              <td class="pv3 pr3 bb b--black-20 br"><div class="color-box color-box-15 center"></div></td>
+              <td class="pv3 pr3 bb b--black-20 br tc"><div><p>background</p></div></td>
+              <td class="pv3 pr3 bb b--black-20 tc">rgba(53, 55, 59, 1.05)</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+        <!-- table -->
+        <!-- base colors: 2 rows, 5 columns -->
+
+        <!--
+        <table>
+          <tbody>
+
+            <thead>
+              <tr>
+                <th class="fw4 bb b--black-20 tl pb3 pr3 bg-white">base colors</th>
+              </tr>
+            </thead>
+
+        -->
+
+          -->
 
             <!-- base colors -->
+            <!--
             <tr>
               <td class="pv3 pr3 bb b--black-20">@base-background-color</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-16"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>base</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgb(53, 55, 59)</td>
             </tr>
             <tr>
               <td class="pv3 pr3 bb b--black-20">@base-border-color</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-17"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>base</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgba(53, 55, 59, 1.08)</td>
             </tr>
 
-            <!-- colors -->
+          </tbody>
+        </table>
+        -->
+
+        <!--
+        <table>
+          <tbody>
+          -->
+
+            <!-- component colors -->
+            <!--
             <tr>
               <td class="pv3 pr3 bb b--black-20">@ui-site-color-1</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-18"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>colors</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgb(0, 136, 255)</td>
             </tr>
             <tr>
               <td class="pv3 pr3 bb b--black-20">@ui-site-color-2</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-19"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>colors</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgb(32, 182, 132)</td>
             </tr>
             <tr>
               <td class="pv3 pr3 bb b--black-20">@ui-site-color-3</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-20"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>colors</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgb(204, 133, 51)</td>
             </tr>
             <tr>
               <td class="pv3 pr3 bb b--black-20">@ui-site-color-4</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-21"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>colors</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgb(216, 49, 176)</td>
             </tr>
             <tr>
               <td class="pv3 pr3 bb b--black-20">@ui-site-color-5</td>
               <td class="pv3 pr3 bb b--black-20"><div class="color-box color-box-22"></div></td>
-              <td class="pv3 pr3 bb b--black-20"><div><p>something</p></div></td>
+              <td class="pv3 pr3 bb b--black-20"><div><p>colors</p></div></td>
               <td class="pv3 pr3 bb b--black-20">rgb(235, 221, 91)</td>
             </tr>
+          -->
+          <!--
           </tbody>
 
         </table>
+          -->
+      -->
+
 
       </div>
     </div>
@@ -190,6 +270,7 @@
 
     <!-- I need 22 cards, divided 8, 7, 2, 5 -->
 
+    <!--
     <main class="cf w-100">
 
       <div class="fl w-50 w-third-m w-25-ns">
@@ -198,6 +279,7 @@
             class="db bg-center cover aspect-ratio--object" />
         </div>
       </div>
+    -->
 
       <!--
       <div class="fl w-50 w-third-m w-25-ns">
@@ -212,6 +294,7 @@
       </div>
     -->
 
+      <!--
       <div class="fl w-50 w-third-m w-25-ns">
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url(http://mrmrs.github.io/images/0002.jpg);"
@@ -327,16 +410,21 @@
         </div>
       </div>
     </main>
+  -->
 
     <!-- another template from tachyons. I need to create my own personal boilerplates. -->
     <footer class="pv5 ph3 ph5-m ph6-l mid-gray">
       <small class="f6 db tc">&copy; 2020 <b class="ttu">pulamusic</b>.</small>
+      <!--
       <div class="tc mt3">
+      -->
         <!-- I'm not sure what to do with this -->
+        <!--
         <a href="/language/" title="Language" class="f6 dib ph2 link mid-gray dim">Language</a>
         <a href="/terms/"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
         <a href="/privacy/"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Privacy</a>
       </div>
+    -->
     </footer>
 
     <script src="scripts/main.js"></script>
